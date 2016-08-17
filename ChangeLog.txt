@@ -1,3 +1,10 @@
+2.0.0 (2016-08-17):
+- Implemented MemoryWatchers
+- Replaced old textbox settings with a treeview
+	- Segment name doesn't matter, it's up to the user to select their splits
+- Added Info, InfoList, and DefaultInfo classes to store pointer, split, and setting info
+- Added "Enter Onox Fight" split
+
 1.0.1 (2016-08-04):
 - Added LiveSplit update support
 - Slightly tweaked the UI

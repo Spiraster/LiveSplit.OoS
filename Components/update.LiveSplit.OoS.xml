@@ -1,4 +1,17 @@
 <updates>
+  <update version="2.0.0">
+    <files>
+      <file path="Components/LiveSplit.OoS.dll" status="changed" />
+    </files>
+    <changelog>
+      <change>
+        Overhauled settings implementation
+      </change>
+      <change>
+        Added "Enter Onox Fight" split condition
+      </change>
+    </changelog>
+  </update>
   <update version="1.0.1">
     <files>
       <file path="Components/LiveSplit.OoS.dll" status="changed" />
