@@ -5,10 +5,10 @@
     </files>
     <changelog>
       <change>
-        Overhauled settings implementation
+        Overhauled settings implementation (2.0.0)
       </change>
       <change>
-        Added "Enter Onox Fight" split condition
+        Added "Enter Onox Fight" split condition (2.0.0)
       </change>
     </changelog>
   </update>
@@ -18,7 +18,10 @@
     </files>
     <changelog>
       <change>
-        Inital upload to GitHub.
+        Added LiveSplit update support (1.0.1)
+      </change>
+      <change>
+        Slightly tweaked UI (1.0.1)
       </change>
     </changelog>
   </update>
