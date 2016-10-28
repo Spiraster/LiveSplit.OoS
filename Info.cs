@@ -7,7 +7,7 @@ namespace LiveSplit.OoS
     {
         public static InfoList Pointers = new InfoList
         {
-            //0x0XXX pointers
+            //WRAM0 pointers
             new Info("Sword", "byte", 0, 0x6AC),
             new Info("D1Ess", "byte", 0, 0x913),
             new Info("D2Ess", "byte", 0, 0x92C),
@@ -32,7 +32,7 @@ namespace LiveSplit.OoS
             new Info("FileSelect2", "short", 0, 0xBB3),
             new Info("ResetCheck", "byte", 0, 0),
 
-            //0x1XXX pointers
+            //WRAM1 pointers
             new Info("BossHP", "byte", 1, 0x1A9),
         };
 
@@ -62,7 +62,7 @@ namespace LiveSplit.OoS
             new Info("L1Sword", "Sword", 1),
             new Info("ENP", "NPEnter", 0x10),
             new Info("EOnox", "OnoxEnter", 0x10),
-            new Info("Onox", "BossHP", 1),
+            new Info("Onox", new Dictionary<string, int> { { "BossHP", 1 }, { "OnoxEnter", 0x10 } }),
         };
     }
 
@@ -87,14 +87,14 @@ namespace LiveSplit.OoS
             Offset = _offset;
         }
 
-        //split
+        //single condition
         public Info(string _name, string _pointer, int _condition)
         {
             Name = _name;
             Triggers = new Dictionary<string, int> { { _pointer, _condition } };
         }
 
-        //split
+        //multiple conditions
         public Info(string _name, Dictionary<string, int> _triggers)
         {
             Name = _name;

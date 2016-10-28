@@ -75,6 +75,11 @@ namespace LiveSplit.OoS
         {
             data.UpdateAll(game);
 
+            //check for file select screen before splitting
+            if (Convert.ToInt32(data["FileSelect1"].Current) == 0x23)
+                return false;
+
+            //check for splits
             foreach (var _split in splits)
             {
                 int count = 0;

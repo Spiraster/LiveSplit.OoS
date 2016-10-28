@@ -1,3 +1,10 @@
+2.0.1 (2016-10-27):
+- Fixed issues with early splits:
+  - "Onox" split would split entering Hero's Cave (and likely elsewhere)
+  - Splits could trigger on the file select screen after a s+q if there was another save file with progress
+- Switched to MainModuleWow64Safe() extension method in getGameProcess()
+- Added version label to settings dialog
+
 2.0.0 (2016-08-17):
 - Implemented MemoryWatchers
 - Replaced old textbox settings with a treeview

@@ -77,6 +77,7 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.treeView1 = new LiveSplit.OoS.NewTreeView();
+            this.lblVersion = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -124,7 +125,7 @@
             this.groupBox2.Controls.Add(this.chkAutoReset);
             this.groupBox2.Location = new System.Drawing.Point(10, 380);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(455, 88);
+            this.groupBox2.Size = new System.Drawing.Size(464, 88);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Options";
@@ -134,7 +135,7 @@
             this.groupBox1.Controls.Add(this.treeView1);
             this.groupBox1.Location = new System.Drawing.Point(10, 10);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(455, 364);
+            this.groupBox1.Size = new System.Drawing.Size(464, 364);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Select the splits you would like the autosplitter to split for:";
@@ -195,23 +196,35 @@
             treeNode9,
             treeNode18,
             treeNode23});
-            this.treeView1.Size = new System.Drawing.Size(449, 345);
+            this.treeView1.Size = new System.Drawing.Size(458, 345);
             this.treeView1.TabIndex = 0;
             this.treeView1.AfterCheck += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterCheck);
+            // 
+            // lblVersion
+            // 
+            this.lblVersion.AutoSize = true;
+            this.lblVersion.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.lblVersion.Location = new System.Drawing.Point(440, 1);
+            this.lblVersion.Name = "lblVersion";
+            this.lblVersion.Size = new System.Drawing.Size(37, 13);
+            this.lblVersion.TabIndex = 21;
+            this.lblVersion.Text = "v0.0.0";
             // 
             // OoSSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.lblVersion);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox2);
             this.Name = "OoSSettings";
             this.Padding = new System.Windows.Forms.Padding(7);
-            this.Size = new System.Drawing.Size(475, 501);
+            this.Size = new System.Drawing.Size(484, 513);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -222,5 +235,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private LiveSplit.OoS.NewTreeView treeView1;
+        private System.Windows.Forms.Label lblVersion;
     }
 }
