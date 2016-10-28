@@ -115,19 +115,19 @@ namespace LiveSplit.OoS
             {
                 //memory.getVersion(game);
                 memory.setSplits(settings);
-            }
 
-            if (AllowFS)
-            {
-                if (settings.AutoSelectFile) //auto file select
+                if (AllowFS)
                 {
-                    SetForegroundWindow(game.MainWindowHandle);
-                    SendKeys.SendWait("{] 20}");
+                    if (settings.AutoSelectFile) //auto file select
+                    {
+                        SetForegroundWindow(game.MainWindowHandle);
+                        SendKeys.SendWait("{] 20}");
+                    }
                 }
-            }
-            else
-            {
-                AllowFS = true;
+                else
+                {
+                    AllowFS = true;
+                }
             }
         }
 

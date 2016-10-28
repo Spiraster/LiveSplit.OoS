@@ -1,3 +1,6 @@
+2.0.2 (2016-10-28):
+- Fixed an issue with "Enter D2" splitting early after saving (unique to Gambatte)
+
 2.0.1 (2016-10-27):
 - Fixed issues with early splits:
   - "Onox" split would split entering Hero's Cave (and likely elsewhere)

@@ -76,7 +76,8 @@ namespace LiveSplit.OoS
             data.UpdateAll(game);
 
             //check for file select screen before splitting
-            if (Convert.ToInt32(data["FileSelect1"].Current) == 0x23)
+            byte _fs = Convert.ToByte(data["FileSelect1"].Current);
+            if (_fs == 0x23 || _fs == 0x17)
                 return false;
 
             //check for splits
@@ -85,8 +86,8 @@ namespace LiveSplit.OoS
                 int count = 0;
                 foreach (var _trigger in _split.Triggers)
                 {
-                    int _int = Convert.ToInt32(data[_trigger.Key].Current);
-                    if (_int == _trigger.Value)
+                    int _value = Convert.ToInt32(data[_trigger.Key].Current);
+                    if (_value == _trigger.Value)
                         count++;
                 }
 
